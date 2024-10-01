@@ -1,7 +1,10 @@
-function callBack(delay) {
+function callBack(message) {
   console.log("CallBack:");
-  console.log("CallBack called after " + delay/1000 + " seconds");
-  
+  console.log(message);
+
+}
+function invokeCallBack(callBack, delay) {
+  setTimeout(() => callBack("CallBack called after " + delay / 1000 + " seconds"), delay);
 }
 
 function onResolve (response) {
@@ -29,7 +32,7 @@ async function asyncAwait(delay) {
   console.log(response);
 }
 
-setTimeout(callBack, 3 * 1000, 3000);
+invokeCallBack(callBack, 3 * 1000);
 promise(2000).then(onResolve).catch(onReject);
 asyncAwait(1000);
 
