@@ -13,7 +13,7 @@ const displayResultPassive = (data) => {
 sumOfTwo(1, 2, displayResult);
 sumOfTwo(1, 2, displayResultPassive);
 
-const interval = setInterval(() => {
+const interval = setInterval( /* Anonymous Function */ () => {
   console.log(new Date().toLocaleTimeString());
 }, 1 * 1000);
 
