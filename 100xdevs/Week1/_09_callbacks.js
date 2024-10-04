@@ -27,7 +27,7 @@ const someOfSquares = sumOfPowers(2, 3, (a) => a * a);
   // const square = (a) => a * a
   
   const someOfSquares = sumOfPowers(2, 3, square);
-*/ 
+*/
 console.log("Some of squares (2,3): " + someOfSquares);
 
 const someOfCubes = sumOfPowers(2, 3, (a) => a * a * a);
@@ -36,8 +36,20 @@ console.log("Some of cubes (2,3): " + someOfCubes);
 const someOfQuads = sumOfPowers(2, 3, (a) => a * a * a * a);
 console.log("Some of squares (2,3): " + someOfQuads);
 
+function undefinedCallBack(callback) {
+  if (callback instanceof Function) {
 
-const interval = setInterval( /* Anonymous Function */ () => {
+    callback();
+  } else {
+    console.log("Callback is not a function");
+    
+  }
+}
+
+undefinedCallBack();  // TypeError: callback is not a function
+
+
+const interval = setInterval( /* Anonymous Function */() => {
   console.log(new Date().toLocaleTimeString());
 }, 1 * 1000);
 

@@ -1,0 +1,9 @@
+- How to create your own async function?
+- In how many ways an asynchronous function can be called?
+- When to use an async function?
+- What language is Chrome written in?
+    Ans: [C++]
+- When to use async await in a function?
+- In case of async await which function does get executed via Web API's?
+- Implement a Promise Class of your own?
+- Does the C++ Web API's know the JavaScript code?
