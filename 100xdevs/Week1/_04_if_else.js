@@ -1,13 +1,13 @@
 let firstName = "Muhib";
 let age = 23;
-let isMarried = false;
+let isStudent = false;
 
 console.log("This person's name is " + firstName + " and age is " + age);
 
-if (isMarried === true) {
-  console.log(firstName + " is married");
-} else if (isMarried === false) {
-  console.log(firstName + " is not married");
+if (isStudent === true) {
+  console.log(firstName + " is a student");
+} else if (isStudent === false) {
+  console.log(firstName + " is not a student");
 } else {
-  console.log(firstName + "'s marriage status is unknown");
+  console.log(firstName + "'s educational status is unknown");
 }
