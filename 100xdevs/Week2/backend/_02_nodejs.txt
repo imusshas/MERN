@@ -1,0 +1,5 @@
+- What can you do in Node.js?
+  • Create CLI(Command Line Interface)'s
+  • Create video players
+  • Create games
+  • Create HTTP servers [Main use case]

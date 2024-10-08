@@ -1,0 +1,8 @@
+- What is DNS?
+ • DNS is just like the underline service of a phone call. As in a phone call a name gets mapped to a number. Likewise, a URL gets mapped to an IP address via a DNS. 
+  [https://dns.google/ -> 8.8.8.8]
+  [https://www.google.com/ -> 142.250.182.174]
+  • Another advantage of DNS is different URLs can have the same IP running on different ports.
+
+- Can I search something via IP?
+  Yes, you can. Just like making a phone call via a number.

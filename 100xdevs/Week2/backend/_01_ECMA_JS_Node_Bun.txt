@@ -1,0 +1,18 @@
+- What is ECMAScript?
+  A scripting language specification on which JavaScript is based. It serves as the guideline or 'rule' for the scripting language design.
+- What is JavaScript?
+  • JavaScript is a scripting language that conforms to the ECMAScript specification.
+  [
+    ECMAScript: The Specification
+    JavaScript: The Implementation
+  ]
+  • JavaScript includes features that are not part of the ECMAScript specification. Like the Document Object Model (DOM).
+  • Common JS Browser Engines:-
+    [
+      V8 - Used by google chrome/chromium - written in 'C++' (https://github.com/v8/v8)
+      SpiderMonkey - Used by Firefox - written in 'C' + 'Rust' (https://spidermonkey.dev)
+    ]
+- What is Node.js?
+  Node.js is a runtime environment. It is written in 'C++'.
+- What is Bun?
+  Bun is a Node.js competitor. It is written in 'Zig'.

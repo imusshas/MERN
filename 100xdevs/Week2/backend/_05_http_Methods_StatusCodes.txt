@@ -1,0 +1,11 @@
+- What are the common http methods?
+  1. POST
+  2. GET
+  3. PUT
+  4. DELETE
+
+- What are the common http status codes?
+  • 200 -> Everything isOK
+  • 404 -> Page/Route not found
+  • 403 -> Authentication issues
+  • 500 -> Internal sever error

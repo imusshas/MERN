@@ -1,0 +1,89 @@
+- What is a HTTP [HyperText Transfer Protocol] server?
+  1. A protocol that is defined for machines to communicate.
+  2. Specifically for websites, it is the most common way for your website's frontend [client] to talk to its backend [server]. 
+
+- How does frontend talk to backend?
+  wires/routes
+
+- What is HTTP Protocol?
+  • In the end, it is a client throwing some information at a server. After doing something with that information server sends some response back with the final result.
+
+  • Think it as of calling a function to someone else's machine. [RPC - Remote Procedure Call]
+
+  • Think of them as function where:-
+    1. Arguments are something the client sends.
+    2. Rather that calling a function by it's name, the client uses a URL.
+    3. Rather than the function body, the server does something with the request.
+    4. Rather than the function returning a value, the server responds with some data.
+
+- HTTP (Client side) - Client needs to worry about?
+  • Protocol (HTTP/HTTPS)
+  • Address (URL/IP/PORT)
+  • Route
+  • Headers, Body, Query Parameters
+  • Method
+
+  [
+    https://chat.openai.com/backend-api/conversation
+
+    1. https -> Protocol
+    2. chat.openai.com -> URL(Uniform Resource Locator)
+    3. backend-api/conversation -> Route
+
+    Request Header - Cookie -> 123as@332SD3@/E223
+    Request Body -> What is 2 + 2 (Usually in JSON)
+    Method -> POST
+  ]
+
+- HTTP (Server side) - Server needs to worry about?
+  • Response Headers
+  • Response Body
+  • Status Code
+
+  [
+    https://chat.openai.com/backend-api/conversation
+
+    Response Header 
+    Response Body -> 2 + 2 is 4.
+    Status Code -> 200
+  ]
+
+- Why do you need method and why do you need the status code? Can't you send them altogether.
+  Yes you can if the protocol is defined like that. But we've to do it as it is because of the protocol.
+
+- What happens in your browser after you fire a request?
+  1. Browser parses the URL.
+  2. Does a DNS [Domain Name Service] Lookup (converts the URL to an IP)
+  3. Establishes a connection with the IP (does handshake)
+
+- What is DNS resolution?
+  URLs are just like phone number in your contact. As you make call via calling to a name or a phone number, under the hood the name gets mapped to a phone number and calls the number. DNS does the mapping here between the URL and the IP.
+
+- What happens after the request is received at a server?
+  1. The server receives the input (route, request body, headers)
+  2. Does some operation based on the input and generates output.
+  3. Respond back with the output (response body, headers, status code)
+
+- What is DNS?
+  DNS is just like the underline service of a phone call. As in a phone call a name gets mapped to a number. Likewise, a URL gets mapped to an IP address via a DNS. 
+  [https://dns.google/ -> 8.8.8.8]
+  [https://www.google.com/ -> 142.250.182.174]
+
+- Can I search something via IP?
+  Yes, you can. Just like making a phone call via a number.
+
+- What are the common http methods?
+  1. POST
+  2. GET
+  3. PUT
+  4. DELETE
+
+- What are the common http status codes?
+  • 200 -> Everything is OK
+  • 404 -> Page/Route not found
+  • 403 -> Authentication issues
+  • 500 -> Internal sever error
+
+- Questions?
+  • How to create your own http vs https server?
+  • How to expose it on internet like chatgpt.com?
